@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assessment test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="parent-container d-flex d-col">
-        <div class="heading text-center">
+        <!-- heading starts -->
+        <div class="heading ">
             <img src="assets/images/head-phone.svg" alt="headphone-img">
             <h2>Get in Touch!</h2>
             <p>Bake Your Mark with Pango</p>
         </div>
+        <!-- heading ends -->
+
+        <!-- hero starts -->
         <div class="hero d-flex">
             <div class="left">
                 <form action="">
@@ -35,21 +37,34 @@
                         <input name="" id="message" placeholder="What do you want..">
                     </div>
                 </form>
-                <div class="text-center">
+                <div >
                     <button type="submit" class="submit-btn">Submit</button>
                 </div>
             </div>
-            <div class="right d-flex">
-                <div>
-                    <img src="/assets/images/phone.svg" alt="">
-                    <pre>+91 9820840946</pre>
+            <div class="right d-flex d-col">
+                <div class="cards d-flex">
+                    <div class="top-left-card">
+                        <img src="/assets/images/phone.svg" alt="">
+                        <pre>+91 9820840946</pre>
+                    </div>
+                    <div class="top-right-card">
+                        <button><p>Click on a Button</p></button>
+                    </div>
                 </div>
-                <div><button>Click on a Button</button></div>
-                <div><img src="/assets/images/location.svg" alt=""></div>
-                <div><img src="/assets/images/mail.svg" alt=""></div>
+                <div class="cards d-flex ">
+                    <div class="bottom-left-card">
+                        <img src="/assets/images/location.svg" alt="">
+                        <p>Mahalaxmi,Mumbai</p>
+                    </div>
+                    <div class="bottom-right-card">
+                        <img src="/assets/images/mail.svg" alt="">
+                        <p>azhar.ali.sayed@panga.in</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- hero ends -->
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,12 +13,19 @@
     flex-direction: column;
 }
 
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
 .parent-container{
     height: 100vh;
 }
 
+/* heading starts */
+
 .heading{
     padding: 76px;
+    text-align: center;
 }
 
 .heading>img{
@@ -37,14 +44,22 @@
     color: #4B10A0;
 }
 
+/* heading ends */
+
 .hero{
     height: 100%;
 }
+
+/* left sec starts */
 
 .left{
     /* padding: 0 0 0 169px; */
     margin-left: 15%;
     flex-basis: 34%;
+}
+
+.left>div{
+    text-align: center;
 }
 
 form input{
@@ -57,6 +72,10 @@ form input{
 form>div{
     height: 13%;
     margin-bottom: 20px;
+}
+
+form>div>label{
+    margin-bottom: 12px;
 }
 
 #message{
@@ -76,17 +95,114 @@ form>div{
     margin-top: 22px;
     background-color: #4B10A0;
     color: white;
+    cursor: pointer;
 }
 
-/* right */
+/* left sec ends */
+
+/* right sec starts*/
 .right{
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 42%;
+    margin-left: 10%;
 
 }
 
-.right>div {
-    width: 40%;
-    height: 36%;
+.cards{
+    width: 83%;
+    height: 40%;
     border-radius: 20px;
+    margin-bottom: 23px;
 }
+
+.cards>div{
+    width: 26%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: #4B10A0;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards>div>img{
+    flex: 1;
+    width: 23%;
+}
+
+.cards>div>pre{
+    margin-bottom: 11px;
+    font-weight: bold;
+}
+
+.top-left-card{
+    rotate: -14deg;
+    width: 28%;
+    margin-right: 50px;
+}
+
+.top-right-card{
+    rotate: 20deg;
+    transform: translateY(-27px);
+    justify-content: end !important;
+    background-color: #7dd4e8 !important;
+}
+
+.top-right-card>button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    flex-wrap: wrap;
+    height: 66%;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.top-right-card>button>p{
+    
+    margin: 0;
+    font-weight: bold;
+    width: 57%;
+    text-align: start;
+    letter-spacing: 1px;
+    font-size: 28px;
+    padding: 13px 13px 0 13px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.bottom-left-card{
+    /* margin-top: 35px; */
+    rotate: 20deg;
+    transform: translateX(-31px);
+    background-color: #f1c934 !important;
+}
+
+.bottom-left-card>p{
+    word-wrap: break-word;
+    width: 66%;
+    align-self: baseline;
+    padding: 0 0 0 11px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.bottom-right-card{
+    margin: 0;
+    transform: translateX(28px);
+    rotate: -14deg;
+    background-color: #97d431 !important;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 37px;
+}
+
+.bottom-right-card>p{
+    word-break: break-word;
+    width: 71%;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+/* right sec ends */
